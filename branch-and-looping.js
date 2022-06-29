@@ -1,26 +1,21 @@
+// IF ELSE
 let age = new Date().getFullYear() - 1992;
-
-if (age < 18) {
-	console.log("anda belum berhak membeli ini...", age);
-} else {
-	console.log("Anda tetap belum berhak membeli ini ....", age);
-}
-
-let nilai = 90;
-
-function cekNilai(nilai){
-	if (nilai < 50){
-		console.log("anda tidak lulus");
-	} else if (nilai < 65 ) {
-		console.log("anda mendapatkan nilai pas");
-	} else if (nilai < 85) {
-		console.log("anda mendapatkan nilai cukup");
+function ageValidator(){
+	if (age < 13) {
+	console.log("Anda belum baligh...", age);
 	} else {
-		console.log ("anda mendapatkan nilai bagus");
+	console.log("Anda sudah baligh ....", age);
 	}
 }
 
-switch (nilai) {
+// Operator Ternary
+let nilaiUjian = 60;
+let ucapan = nilaiUjian >= 75 ? "Selamat anda lulus" : "Silahkan coba lagi";
+console.log(ucapan);
+
+// SWITCH
+let nilai=90;
+switch (true) {
 	case "A":
 		console.log("Anda lulus dengan baik");
 		break;
@@ -34,3 +29,7 @@ switch (nilai) {
 	default:
 		console.log("Anda mungkin salah jurusan");
 }
+
+
+
+
