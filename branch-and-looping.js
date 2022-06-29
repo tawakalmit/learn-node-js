@@ -16,14 +16,13 @@ console.log(ucapan);
 // SWITCH
 let nilai=90;
 switch (true) {
-	case "A":
+	case nilai == 90:
 		console.log("Anda lulus dengan baik");
 		break;
-	case "B":
-	case "C":
+	case nilai == 80:
 		console.log("Anda Lulus");
 		break;
-	case "D":
+	case nilai == 70:
 		console.log("Anda tidak lulus");
 		break;
 	default:
